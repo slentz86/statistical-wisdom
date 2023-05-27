@@ -1,9 +1,5 @@
 ---
-title: "statistical-wisdom"
+title: "Statistical Wisdom"
 ---
 
-This is my test.
-
-```{r}
-1 + 1
-```
+Making sense of statistics, data science, and machine learning.
