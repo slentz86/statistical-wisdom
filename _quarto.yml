@@ -7,8 +7,9 @@ website:
     left:
       - href: index.qmd
         text: Articles
-        menu: 
-        - about.qmd
+        menu:
+          - text: Simple Random Sampling Is Not Simple 
+          - about.qmd
 
 format:
   html:
