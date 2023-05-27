@@ -2,11 +2,11 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "statistical-wisdom"
+  title: "Statistical Wisdom"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Articles
         menu: 
         - about.qmd
 
