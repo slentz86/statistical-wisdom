@@ -5,16 +5,17 @@ website:
   title: "Statistical Wisdom"
   navbar:
     left:
-      - href: index.qmd
-        text: Articles
-        menu:
-          - text: Simple Random Sampling Is Not Simple 
-          - about.qmd
-
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: about.qmd
+      - text: Articles
+        href: lsting.qmd
 format:
   html:
     theme: cosmo
     css: styles.css
+    page-layout: full
     toc: true
 
 editor: visual
