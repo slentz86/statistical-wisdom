@@ -1,6 +1,14 @@
 [
   {
-    "listing": "/listing.html",
+    "listing": "/articles/srs/srs_articles.html",
     "items": []
+  },
+  {
+    "listing": "/articles.html",
+    "items": [
+      "/articles/srs/just_take_an_average/index.html",
+      "/articles/srs/srs_articles.html",
+      "/articles/srs/why_srs_works/index.html"
+    ]
   }
 ]

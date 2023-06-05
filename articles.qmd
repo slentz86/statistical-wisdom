@@ -1,7 +1,6 @@
 ---
 listing: 
   contents: articles/**/*.qmd
-  sort: "date desc"
   type: default
   categories: true
   sort-ui: true
@@ -9,3 +8,8 @@ listing:
   fields: [date, title, description, categories]
 page-layout: full
 ---
+
+# Series
+
+##### [srs_listing](srs_listings.html)
+This series talks about Simple Random Sampling.

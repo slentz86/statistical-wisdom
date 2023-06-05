@@ -1,0 +1,3 @@
+---
+title: "Why Simple Random Samples Work"
+---

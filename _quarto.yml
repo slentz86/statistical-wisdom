@@ -10,7 +10,7 @@ website:
       - text: About
         href: about.qmd
       - text: Articles
-        href: lsting.qmd
+        href: articles.qmd
 format:
   html:
     theme: cosmo
