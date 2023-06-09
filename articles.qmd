@@ -6,11 +6,11 @@ listing:
 page-layout: full
 ---
 
-:::{#srs}
-## The Not-so-simple of Simple Random Samples
+## Check out the following series.
 
-Random samples are fundamental to statistics and machine learning. Yet they are taken for granted. Discover how random sampling works, how it is applied, and what are its limitations.
+:::{#srs}
 :::
 
+Random samples are fundamental to statistics and machine learning. Yet they are taken for granted. Discover how random sampling works, how it is applied, and what are its limitations.
 
 
