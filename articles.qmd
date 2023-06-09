@@ -1,15 +1,16 @@
 ---
 listing: 
-  contents: articles/**/*.qmd
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
-  fields: [date, title, description, categories]
+  - id: srs
+    contents: "articles/srs/*.qmd"
+    type: default
 page-layout: full
 ---
 
-# Series
+:::{#srs}
+## The Not-so-simple of Simple Random Samples
 
-##### [srs_listing](srs_listings.html)
-This series talks about Simple Random Sampling.
+Random samples are fundamental to statistics and machine learning. Yet they are taken for granted. Discover how random sampling works, how it is applied, and what are its limitations.
+:::
+
+
+

@@ -63,20 +63,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-srs .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-srs'] = new List('listing-srs', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -133,78 +133,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#series" id="toc-series" class="nav-link active" data-scroll-target="#series">Series</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
-<!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-
-
-<section id="series" class="level1">
-<h1>Series</h1>
-<section id="srs_listing" class="level5">
-<h5 class="anchored" data-anchor-id="srs_listing"><a href="srs_listings.html">srs_listing</a></h5>
-<p>This series talks about Simple Random Sampling.</p>
-
-
-
-</section>
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
-</div>
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+
+
+<div id="listing-srs" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1686005767619" data-listing-reading-time-sort="0.005">
-<div class="body">
-<a href="./articles/srs/just_take_an_average/index.html">
-<h3 class="no-anchor listing-title">
-Just Take An Average!
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./articles/srs/just_take_an_average/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1686004389180" data-listing-reading-time-sort="0.005">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1686326579983" data-listing-reading-time-sort="0.005">
 <div class="body">
 <a href="./articles/srs/srs_articles.html">
 <h3 class="no-anchor listing-title">
-The Not-So-Simple of Simple Random Sampling
+The Not-So-Simple of Simple Random Sampling (Series)
 </h3>
 <div class="listing-subtitle">
 
@@ -218,29 +161,16 @@ The Not-So-Simple of Simple Random Sampling
 <a href="./articles/srs/srs_articles.html"> </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1686005776598" data-listing-reading-time-sort="0.005">
-<div class="body">
-<a href="./articles/srs/why_srs_works/index.html">
-<h3 class="no-anchor listing-title">
-Why Simple Random Samples Work
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./articles/srs/why_srs_works/index.html"> </a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

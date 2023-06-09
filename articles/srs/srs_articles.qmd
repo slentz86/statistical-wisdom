@@ -1,5 +1,5 @@
 ---
-title: "The Not-So-Simple of Simple Random Sampling"
+title: "The Not-So-Simple of Simple Random Sampling (Series)"
 listing:
   contents: articles/srs
   type: default
